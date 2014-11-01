@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b City:
+  = @address.city
+%p
+  %b Street:
+  = @address.street
+%p
+  %b Number:
+  = @address.number
+
+= link_to 'Edit', edit_address_path(@address)
+\|
+= link_to 'Back', addresses_path
