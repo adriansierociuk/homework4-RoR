@@ -39,3 +39,10 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+
+gem 'execjs'
+gem 'therubyracer', :platforms => :ruby
+gem 'bootstrap-sass'
+gem 'spockets'
+gem 'haml-rails'
+gem 'rails_12factor', group: :production
