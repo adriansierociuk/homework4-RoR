@@ -8,6 +8,12 @@
 
   .field
     = f.label :product
+    %br/
     = f.text_field :product
+  = f.fields_for :customer do |customer_attributes|
+    .field
+      = customer_attributes.label :first_name
+      %br/
+      = customer_attributes.text_field :last_name
   .actions
     = f.submit 'Save'

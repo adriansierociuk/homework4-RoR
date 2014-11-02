@@ -15,6 +15,7 @@ class OrdersController < ApplicationController
   # GET /orders/new
   def new
     @order = Order.new
+    @order.build_customer if @order.customer.nil?
   end
 
   # GET /orders/1/edit
