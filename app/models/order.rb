@@ -4,6 +4,6 @@ class Order < ActiveRecord::Base
   accepts_nested_attributes_for :customer, :reject_if => :no_name
 
   def no_name(attributes)
-    attributes[:name].blank?
+    attributes[:first_name].blank?
   end
 end
